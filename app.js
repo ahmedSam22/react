@@ -1,17 +1,17 @@
-const express = require("express");
-const app = express();
+const express = require("express")
+const mongoose = require("mongoose")
+const app = express()
+mongoose.connect('mongodb://localhost:27017/lab04')
 
-const path = require("path");
-const { default: App } = require("./src/App");
-const port = process.env.port || 3000;
+console.log(mongoose.connection.readyState)
 
-if(process.env.MODE_ENV === "production"){
-    app.use(express.static('build'));
-    app.get('*',(req,res)=>{
-        req.sendFile(path.resolve(__dirname,'build','index.html'))
-    })
-}
+app.use(express.json())
 
-app.listen(port,()=>{
+
+
+
+
+
+app.listen(3000,()=>{
     console.log("tamam");
     })
