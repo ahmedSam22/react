@@ -8,10 +8,6 @@
     "@testing-library/user-event": "^13.5.0",
     "axios": "^0.25.0",
     "bootstrap": "^5.1.3",
-    "express": "^4.17.2",
-    "mongoose": "^6.2.1",
-    "node": "17.4.0",
-    "nodemon": "^2.0.15",
     "react": "^17.0.2",
     "react-bootstrap": "^2.1.1",
     "react-dom": "^17.0.2",
@@ -25,7 +21,7 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "node app",
+    "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
@@ -47,17 +43,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
-  "main": "app.js",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/ahmedSam22/react.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/ahmedSam22/react/issues"
-  },
-  "homepage": "https://github.com/ahmedSam22/react#readme"
+  }
 }
